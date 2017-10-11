@@ -86,6 +86,13 @@
             </li>
         
             <li class="waves-block waves-effect">
+              <a href="/test"  >
+                <i class="icon icon-lg icon-test"></i>
+                Test
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
               <a href="https://github.com/Fay94" target="_blank" >
                 <i class="icon icon-lg icon-github"></i>
                 Github
@@ -112,16 +119,6 @@
         </a>
         <div class="flex-col header-title ellipsis">Tags: css</div>
         
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
-        </div>
-        
         
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
             <i class="icon icon-lg icon-share-alt"></i>
@@ -145,23 +142,27 @@
             ">All</a>
         
 
-            <a href="/tags/markdown/" style="-webkit-order:4;order:4" class="tags-list-item waves-effect waves-button waves-light">markdown</a>
+            <a href="/tags/css/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light active">css</a>
 
         
 
-            <a href="/tags/指令/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">指令</a>
+            <a href="/tags/指令/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">指令</a>
 
         
 
-            <a href="/tags/css/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light active">css</a>
+            <a href="/tags/markdown/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">markdown</a>
 
         
 
-            <a href="/tags/python/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">python</a>
+            <a href="/tags/python/" style="-webkit-order:3;order:3" class="tags-list-item waves-effect waves-button waves-light">python</a>
 
         
 
-            <a href="/tags/线程/" style="-webkit-order:3;order:3" class="tags-list-item waves-effect waves-button waves-light">线程</a>
+            <a href="/tags/线程/" style="-webkit-order:4;order:4" class="tags-list-item waves-effect waves-button waves-light">线程</a>
+
+        
+
+            <a href="/tags/html/" style="-webkit-order:5;order:5" class="tags-list-item waves-effect waves-button waves-light">html</a>
 
         
     </nav>
@@ -175,12 +176,12 @@
 
 </header>
 
-<div class="container body-wrap fade">
-    
+    <div class="container body-wrap fade">
+        
             <div class="waterfall">
-          
+                
 
-            <div class="waterfall-item">
+                    <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
       <time class="post-time" title="2017-09-27 13:41:13" datetime="2017-09-27T05:41:13.000Z"  itemprop="datePublished">2017-09-27</time>
@@ -210,12 +211,11 @@
   </article>
 </div>
 
-        
+                        
             </div>
-        
-    
-</div>
-
+            
+                    
+    </div>
 
         <footer class="footer">
     <div class="top">
@@ -304,26 +304,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </script>
 
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
-
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
 

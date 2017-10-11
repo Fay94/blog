@@ -27,7 +27,7 @@
 <meta property="og:url" content="https://fay94.github.io/2017/09/20/markdown使用/index.html">
 <meta property="og:site_name" content="凹凸曼">
 <meta property="og:description" content="常用语法标题 语法格式： ‘#’+’空格’+’文本’   一级标题二级标题三级标题四级标题五级标题六级标题列表 无序列表语法格式： ‘-‘ + ‘空格’ ＋ ‘文本’    文本一 文本二 文本三   有序列表语法格式： ‘数字’ + ‘.’ + ‘空格’ + ‘文本’    文本一 文本二 文本三  链接和图片在 Markdown 中插入链接不需要其他按钮，你只需要使用［显示文本］(链接地址)这">
-<meta property="og:updated_time" content="2017-09-27T05:51:43.336Z">
+<meta property="og:updated_time" content="2017-10-11T06:05:37.598Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown使用">
 <meta name="twitter:description" content="常用语法标题 语法格式： ‘#’+’空格’+’文本’   一级标题二级标题三级标题四级标题五级标题六级标题列表 无序列表语法格式： ‘-‘ + ‘空格’ ＋ ‘文本’    文本一 文本二 文本三   有序列表语法格式： ‘数字’ + ‘.’ + ‘空格’ + ‘文本’    文本一 文本二 文本三  链接和图片在 Markdown 中插入链接不需要其他按钮，你只需要使用［显示文本］(链接地址)这">
@@ -88,6 +88,13 @@
             </li>
         
             <li class="waves-block waves-effect">
+              <a href="/test"  >
+                <i class="icon icon-lg icon-test"></i>
+                Test
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
               <a href="https://github.com/Fay94" target="_blank" >
                 <i class="icon icon-lg icon-github"></i>
                 Github
@@ -113,16 +120,6 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">markdown使用</div>
-        
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
-        </div>
         
         
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
@@ -273,7 +270,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-09-27T05:51:43.336Z" itemprop="dateUpdated">2017-09-27 13:51:43</time>
+    Last updated: <time datetime="2017-10-11T06:05:37.598Z" itemprop="dateUpdated">2017-10-11 14:05:37</time>
 </span><br>
 
 
@@ -290,10 +287,6 @@
 </blockquote>
 
         
-<div class="page-reward">
-    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
-</div>
-
 
 
         <div class="post-footer">
@@ -392,32 +385,6 @@
 
 </article>
 
-<div id="reward" class="page-modal reward-lay">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <h3 class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        谢谢大爷~
-        <i class="icon icon-quote-right"></i>
-    </h3>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
-        </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
-                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-label"></span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
-        
-    </div>
-</div>
-
 
 
 </div>
@@ -503,32 +470,12 @@
 
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 </script>
 
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
-
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
 
